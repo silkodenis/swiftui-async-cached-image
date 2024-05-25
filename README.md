@@ -42,23 +42,6 @@ struct ContentView: View {
     }
 }
 ```
-## Comparison with AsyncImage
-
-AsyncImage is a built-in SwiftUI view introduced in iOS 15 that also allows asynchronous image loading from a URL. Here’s a comparison of AsyncCachedImage and AsyncImage:
-
-### AsyncCachedImage
-
--    iOS Compatibility: Works with iOS 13+
--    Caching: Explicitly manages image caching using URLCache
--    Customizability: Allows custom content and placeholder views
--    Control: Provides greater control over the image loading process
-
-### AsyncImage
-
--    iOS Compatibility: Available in iOS 15+
--    Caching: Automatically handles caching
--    Customizability: Limited customization options compared to AsyncCachedImage
--    Control: Easier to use for simple cases, but less control over the loading process
 
 ## License
 This project is licensed under the [Apache License, Version 2.0](LICENSE).
