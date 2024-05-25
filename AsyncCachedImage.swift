@@ -21,14 +21,14 @@ import Combine
 
 /// A view that asynchronously loads and caches an image from a URL,
 /// displaying a placeholder while the image is being loaded.
-struct AsyncCachedImageView<ImageView: View, PlaceholderView: View>: View {
+struct AsyncCachedImage<ImageView: View, PlaceholderView: View>: View {
     private let url: URL?
     private let content: (Image) -> ImageView
     private let placeholder: () -> PlaceholderView
     @State private var image: UIImage? = nil
     @State private var cancellable: AnyCancellable?
 
-    /// Initializes the AsyncCachedImageView with a URL, content view, and placeholder view.
+    /// Initializes the AsyncCachedImage with a URL, content view, and placeholder view.
     ///
     /// - Parameters:
     ///   - url: The URL to load the image from.
